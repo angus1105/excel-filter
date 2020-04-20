@@ -7,7 +7,7 @@ script: yarn electron:build-w
 deploy:
   provider: releases
   api_key: "f5c2fb3414854741e17832f61f2de6824964227a"
-  file: dist_electron/*
+  file: dist_electron/**/*
   skip_cleanup: true
   on:
     tags: true
