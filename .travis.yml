@@ -6,7 +6,7 @@ install: yarn
 script: yarn electron:build-w
 deploy:
   provider: releases
-  api_key: "f5c2fb3414854741e17832f61f2de6824964227a"
+  api_key: "e74fca594275941b4d4af080569617846ba3fd5e"
   file: dist_electron/**/*
   skip_cleanup: true
   on:
