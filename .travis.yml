@@ -11,3 +11,4 @@ deploy:
   file: dist_electron/**/*
   on:
     repo: angus1105/excel-filter
+    tags: false
