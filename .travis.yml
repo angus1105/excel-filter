@@ -8,7 +8,7 @@ deploy:
   provider: releases
   api_key:
     secure: MJ5689HI9YggHC0oCDOaErGrqRh/GhzQ8+YlyOlJ3P6b16zuvILN4tT3zJc/ZltSaZFH9f3e5WITMINbZ2jajMR4euwuvgxuxvuJFYBjTSXENb63OSqMtIRqecwykoAVivecpkeIXTAb3PGZLK+gKNZVoDszDVKgWlpdHruPCbELtlwRuFUG5lqmj6KQwGQMRF1kMHLl14dBd+7/kFsZbfQg1jeink8fJbwEcNal0Z26RjT3vIMQLVUaqj91dxBOM2+vZ0Iz5VHHrfqXjokQhMyPMGj2N9yn6S0AvxsNW3OFwAXKzl39zKvaT6T5qwbgSQa9LRXn31JAane9rm0g5jaSyzZMDHWzh5ReMd+A01744Aj0/1WdO88o8p7xJb9pzxiQEqgrxGJdar8k6aN9G1f+cNuyUn36Fak+l5Xqcb+KvzJT33gbMEONjDRsApD/0Bm4lhjoF4Dvn1ZUDRuzaOqTO0jluwozEpsI+sOZ90QlqaXrTsEjrav+n/O/1mrRE/jdK8FnOG8P0gGkKpR3uqm51oBA6LSRz3cFH1MI3lPZnskAOdfgJgFDbKYpU7xtV+ZjBSr4E8gaEQrwkisIEUdd5yJbGb0J54gj1AflBz5/K8VbKasXetCHvGPApJoG7cYm/E0zUdIJWIRgobhVfJD+d29zIrmFNGWyDSCw4rE=
-  file: dist_electron/**/*
+  file: dist_electron/*
   on:
     repo: angus1105/excel-filter
     tags: false
