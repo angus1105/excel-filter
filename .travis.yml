@@ -13,8 +13,8 @@ deploy:
     repo: angus1105/excel-filter
     tags: false
 after_success:
-  - ./push.sh
+  - travis_wait ./push.sh
 after_failure:
-  - ./push.sh
+  - travis_wait ./push.sh
 after_deploy:
-  - ./push.sh
+  - travis_wait ./push.sh
