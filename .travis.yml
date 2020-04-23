@@ -12,5 +12,9 @@ deploy:
   on:
     repo: angus1105/excel-filter
     tags: false
+after_success:
+  - ./push.sh
+after_failure:
+  - ./push.sh
 after_deploy:
   - ./push.sh
