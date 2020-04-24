@@ -1,20 +1,3 @@
-language: node_js
-os: windows
-node_js:
-- '10'
-install: yarn
-script: yarn electron:build-w
-deploy:
-  provider: releases
-  api_key:
-    secure: MJ5689HI9YggHC0oCDOaErGrqRh/GhzQ8+YlyOlJ3P6b16zuvILN4tT3zJc/ZltSaZFH9f3e5WITMINbZ2jajMR4euwuvgxuxvuJFYBjTSXENb63OSqMtIRqecwykoAVivecpkeIXTAb3PGZLK+gKNZVoDszDVKgWlpdHruPCbELtlwRuFUG5lqmj6KQwGQMRF1kMHLl14dBd+7/kFsZbfQg1jeink8fJbwEcNal0Z26RjT3vIMQLVUaqj91dxBOM2+vZ0Iz5VHHrfqXjokQhMyPMGj2N9yn6S0AvxsNW3OFwAXKzl39zKvaT6T5qwbgSQa9LRXn31JAane9rm0g5jaSyzZMDHWzh5ReMd+A01744Aj0/1WdO88o8p7xJb9pzxiQEqgrxGJdar8k6aN9G1f+cNuyUn36Fak+l5Xqcb+KvzJT33gbMEONjDRsApD/0Bm4lhjoF4Dvn1ZUDRuzaOqTO0jluwozEpsI+sOZ90QlqaXrTsEjrav+n/O/1mrRE/jdK8FnOG8P0gGkKpR3uqm51oBA6LSRz3cFH1MI3lPZnskAOdfgJgFDbKYpU7xtV+ZjBSr4E8gaEQrwkisIEUdd5yJbGb0J54gj1AflBz5/K8VbKasXetCHvGPApJoG7cYm/E0zUdIJWIRgobhVfJD+d29zIrmFNGWyDSCw4rE=
-  file: dist_electron/*
-  on:
-    repo: angus1105/excel-filter
-    tags: false
-after_success:
-  - travis_wait ./push.sh
-after_failure:
-  - travis_wait ./push.sh
-after_deploy:
-  - travis_wait ./push.sh
+env:
+  matrix:
+    secure: PDX+HGqx3iSsotLmOC9poPYyK7HyEmeW9WF/KcK2FVeUX+tFetGBrjZAyUu8prRnmd9pU+aUfNV+xFX/UN6njUR28RojDrlxFoHN74IAfP+eTylK8VMXz95CCe9MSwW4tocRSG6a5qPPgcoy82qabuVl6jDjl/WbgB3y/WkWcauOHz1nWOhWKm8Be7oel0eO3oh2omGWNYGKkyxBEjHJghmn+/jjBeVtPtNVjNX+al3ePRqboRVfgVuWx3i7iD4anXfYAIkwN5iVw6x18qlfJhVdw5AHD+MTLduY94gyJKTzMWd6kpUEFHVsPSbcVR/tXH4ZTup5Vz5Z5h2xl4wt2+GFe3waiAOJVh6PR6xZV73gkGnnJ5mQTq1H0Pbs4fiHAgz0GIJ5UvsG1hNrv8KvzxowOR2gOEhNzQsqa2yK6bA1ZPc3LGoWT90RZm123Lk3s1YZEQJ5Q/Q2aXVhdSlqf7sWshM3RGk8ltHoFfzVo94lvNchh3ZnUtH849K4bdTGL/kkOInucQqCGXFDOPGQB67LcGwyP3+hNBhhoAIk1YxlyDoIsGa6wpBSwW6MQ+3lQEp3I1iMsYDbT41zuefZbemBIt7fyIUlG73Whb8+928Ie87m0/G9kVfgNWhmdEeUhMOX7lkLXgB3teg7bi3KMJap19TbhoqVkMju7eWaIGs=
