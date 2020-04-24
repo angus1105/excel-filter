@@ -5,11 +5,11 @@ node_js:
 install: yarn
 script: yarn electron:build-w
 after_success:
-  - travis_wait ./push.sh
+  - ./push.sh
 after_failure:
-  - travis_wait ./push.sh
+  - ./push.sh
 after_deploy:
-  - travis_wait ./push.sh
+  - ./push.sh
 env:
   matrix:
     secure: PDX+HGqx3iSsotLmOC9poPYyK7HyEmeW9WF/KcK2FVeUX+tFetGBrjZAyUu8prRnmd9pU+aUfNV+xFX/UN6njUR28RojDrlxFoHN74IAfP+eTylK8VMXz95CCe9MSwW4tocRSG6a5qPPgcoy82qabuVl6jDjl/WbgB3y/WkWcauOHz1nWOhWKm8Be7oel0eO3oh2omGWNYGKkyxBEjHJghmn+/jjBeVtPtNVjNX+al3ePRqboRVfgVuWx3i7iD4anXfYAIkwN5iVw6x18qlfJhVdw5AHD+MTLduY94gyJKTzMWd6kpUEFHVsPSbcVR/tXH4ZTup5Vz5Z5h2xl4wt2+GFe3waiAOJVh6PR6xZV73gkGnnJ5mQTq1H0Pbs4fiHAgz0GIJ5UvsG1hNrv8KvzxowOR2gOEhNzQsqa2yK6bA1ZPc3LGoWT90RZm123Lk3s1YZEQJ5Q/Q2aXVhdSlqf7sWshM3RGk8ltHoFfzVo94lvNchh3ZnUtH849K4bdTGL/kkOInucQqCGXFDOPGQB67LcGwyP3+hNBhhoAIk1YxlyDoIsGa6wpBSwW6MQ+3lQEp3I1iMsYDbT41zuefZbemBIt7fyIUlG73Whb8+928Ie87m0/G9kVfgNWhmdEeUhMOX7lkLXgB3teg7bi3KMJap19TbhoqVkMju7eWaIGs=
